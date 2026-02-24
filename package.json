@@ -1,0 +1,39 @@
+{
+  "name": "minions-bundles-finance",
+  "version": "0.1.0",
+  "description": "Financial tracking bundle — budgets, expenses, invoices",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "author": "Mehdi Nabhani <mehdi@the-mehdi.com> (https://the-mehdi.com)",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "minions-sdk": "^0.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  },
+  "keywords": ["finance","bundle","ai","minions"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mxn2020/minions-bundles-finance"
+  }
+}
