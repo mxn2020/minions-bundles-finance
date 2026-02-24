@@ -1,39 +1,28 @@
 {
-  "name": "minions-bundles-finance",
-  "version": "0.1.0",
-  "description": "Financial tracking bundle — budgets, expenses, invoices",
-  "type": "module",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+    "name": "minions-bundles-finance-workspace",
+    "private": true,
+    "version": "0.1.0",
+    "description": "Financial tracking bundle — budgets, expenses, invoices",
+    "type": "module",
+    "license": "MIT",
+    "author": "Mehdi Nabhani <mehdi@the-mehdi.com> (https://the-mehdi.com)",
+    "workspaces": [
+        "packages/*",
+        "apps/*"
+    ],
+    "scripts": {
+        "build": "pnpm --filter @mxn2020/minions-bundles-finance-core run build && pnpm --filter @mxn2020/minions-bundles-finance-cli run build && pnpm --filter @mxn2020/minions-bundles-finance-docs run build && pnpm --filter @mxn2020/minions-bundles-finance-blog run build && pnpm --filter @mxn2020/minions-bundles-finance-web run build",
+        "deploy:blog": "pnpm --filter @mxn2020/minions-bundles-finance-blog run build && netlify deploy --dir apps/blog/dist --prod",
+        "deploy:docs": "pnpm --filter @mxn2020/minions-bundles-finance-docs run build && netlify deploy --dir apps/docs/dist --prod",
+        "deploy:web": "pnpm --filter @mxn2020/minions-bundles-finance-web run build && netlify deploy --dir apps/web/dist --prod",
+        "test": "pnpm --filter @mxn2020/minions-bundles-finance-core run test",
+        "lint": "pnpm --filter @mxn2020/minions-bundles-finance-core run build && pnpm --filter @mxn2020/minions-bundles-finance-core run lint && pnpm --filter @mxn2020/minions-bundles-finance-cli run lint",
+        "deploy": "pnpm run deploy:blog"
+    },
+    "engines": {
+        "node": ">=20"
+    },
+    "devDependencies": {
+        "typescript": "^5.9.3"
     }
-  },
-  "files": [
-    "dist",
-    "README.md"
-  ],
-  "author": "Mehdi Nabhani <mehdi@the-mehdi.com> (https://the-mehdi.com)",
-  "scripts": {
-    "build": "tsc",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "lint": "tsc --noEmit"
-  },
-  "dependencies": {
-    "minions-sdk": "^0.2.3"
-  },
-  "devDependencies": {
-    "@types/node": "^20.0.0",
-    "typescript": "^5.9.3",
-    "vitest": "^4.0.18"
-  },
-  "keywords": ["finance","bundle","ai","minions"],
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mxn2020/minions-bundles-finance"
-  }
 }
