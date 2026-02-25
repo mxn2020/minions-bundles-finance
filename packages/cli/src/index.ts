@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * @mxn2020/minions-bundles-finance-cli — CLI for Minions Bundle: Finance
+ * @minions-bundles-finance/cli — CLI for Minions Bundle: Finance
  *
  * Uses minions-sdk's JsonFileStorageAdapter for sharded, atomic file storage:
  *   <rootDir>/<id[0..1]>/<id[2..3]>/<id>.json
@@ -18,7 +18,7 @@ import {
 } from 'minions-sdk';
 import type { Minion, StorageFilter } from 'minions-sdk';
 import { JsonFileStorageAdapter } from 'minions-sdk/node';
-import { bundleTypes as customTypes } from '@mxn2020/minions-bundles-finance-sdk';
+import { bundleTypes as customTypes } from '@minions-bundles-finance/sdk';
 
 const program = new Command();
 const STORE_DIR = process.env.MINIONS_STORE || '.minions';
@@ -61,8 +61,8 @@ program
         console.log(chalk.bold('Minions Bundle: Finance'));
         console.log(chalk.dim('Financial tracking bundle — budgets, expenses, invoices'));
         console.log('');
-        console.log(`  SDK:    ${chalk.cyan('@mxn2020/minions-bundles-finance-sdk')}`);
-        console.log(`  CLI:    ${chalk.cyan('@mxn2020/minions-bundles-finance-cli')}`);
+        console.log(`  SDK:    ${chalk.cyan('@minions-bundles-finance/sdk')}`);
+        console.log(`  CLI:    ${chalk.cyan('@minions-bundles-finance/cli')}`);
         console.log(`  Python: ${chalk.cyan('minions-bundles-finance')}`);
         console.log(`  Store:  ${chalk.cyan(STORE_DIR)}`);
         console.log(`  Types:  ${chalk.cyan(String(customTypes.length))}`);

@@ -1,11 +1,11 @@
-# @mxn2020/minions-bundles-finance-cli
+# @minions-bundles-finance/cli
 
 CLI for Minions Bundle: Finance — Financial tracking bundle — budgets, expenses, invoices
 
 ## Installation
 
 ```bash
-npm install -g @mxn2020/minions-bundles-finance-cli
+npm install -g @minions-bundles-finance/cli
 ```
 
 ## Usage

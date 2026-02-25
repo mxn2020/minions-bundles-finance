@@ -1,17 +1,17 @@
-# @mxn2020/minions-bundles-finance-sdk
+# @minions-bundles-finance/sdk
 
 Financial tracking bundle — budgets, expenses, invoices
 
 ## Installation
 
 ```bash
-npm install @mxn2020/minions-bundles-finance-sdk minions-sdk
+npm install @minions-bundles-finance/sdk minions-sdk
 ```
 
 ## Usage
 
 ```typescript
-import { createMinion } from '@mxn2020/minions-bundles-finance-sdk';
+import { createMinion } from '@minions-bundles-finance/sdk';
 
 // TODO: Add your SDK's usage example here
 ```

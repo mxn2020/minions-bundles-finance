@@ -40,13 +40,13 @@ jobs:
       - name: Test
         run: pnpm run test
 
-      - name: Publish @mxn2020/minions-bundles-finance-sdk
-        run: pnpm --filter @mxn2020/minions-bundles-finance-sdk publish --no-git-checks --access public
+      - name: Publish @minions-bundles-finance/sdk
+        run: pnpm --filter @minions-bundles-finance/sdk publish --no-git-checks --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Publish @mxn2020/minions-bundles-finance-cli
-        run: pnpm --filter @mxn2020/minions-bundles-finance-cli publish --no-git-checks --access public
+      - name: Publish @minions-bundles-finance/cli
+        run: pnpm --filter @minions-bundles-finance/cli publish --no-git-checks --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 

@@ -6,7 +6,7 @@ description: "Get up and running with Minions Bundle: Finance in minutes"
 ## TypeScript
 
 ```typescript
-import { createClient } from '@mxn2020/minions-bundles-finance-sdk';
+import { createClient } from '@minions-bundles-finance/sdk';
 
 const client = createClient();
 console.log('Version:', client.version);

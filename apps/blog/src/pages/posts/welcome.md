@@ -10,9 +10,9 @@ We're excited to introduce **Minions Bundle: Finance** — Financial tracking bu
 
 ## What's Included
 
-- **TypeScript SDK**: `npm install @mxn2020/minions-bundles-finance-sdk`
+- **TypeScript SDK**: `npm install @minions-bundles-finance/sdk`
 - **Python SDK**: `pip install minions-bundles-finance`
-- **CLI**: `npm install -g @mxn2020/minions-bundles-finance-cli`
+- **CLI**: `npm install -g @minions-bundles-finance/cli`
 
 ## Getting Started
 
