@@ -1,6 +1,6 @@
 {
   "name": "@minions-bundles-finance/sdk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Financial tracking bundle — budgets, expenses, invoices",
   "type": "module",
   "main": "./dist/index.js",
@@ -24,7 +24,7 @@
     "docs": "typedoc"
   },
   "dependencies": {
-    "minions-sdk": "0.2.3"
+    "minions-sdk": "0.2.4"
   },
   "devDependencies": {
     "@types/node": "^25.3.0",
