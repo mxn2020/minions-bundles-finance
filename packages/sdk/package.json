@@ -1,5 +1,5 @@
 {
-  "name": "@mxn2020/minions-bundles-finance-core",
+  "name": "@mxn2020/minions-bundles-finance-sdk",
   "version": "0.1.0",
   "description": "Financial tracking bundle — budgets, expenses, invoices",
   "type": "module",

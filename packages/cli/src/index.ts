@@ -18,7 +18,7 @@ import {
 } from 'minions-sdk';
 import type { Minion, StorageFilter } from 'minions-sdk';
 import { JsonFileStorageAdapter } from 'minions-sdk/node';
-import { bundleTypes as customTypes } from '@mxn2020/minions-bundles-finance-core';
+import { bundleTypes as customTypes } from '@mxn2020/minions-bundles-finance-sdk';
 
 const program = new Command();
 const STORE_DIR = process.env.MINIONS_STORE || '.minions';
@@ -61,7 +61,7 @@ program
         console.log(chalk.bold('Minions Bundle: Finance'));
         console.log(chalk.dim('Financial tracking bundle — budgets, expenses, invoices'));
         console.log('');
-        console.log(`  SDK:    ${chalk.cyan('@mxn2020/minions-bundles-finance-core')}`);
+        console.log(`  SDK:    ${chalk.cyan('@mxn2020/minions-bundles-finance-sdk')}`);
         console.log(`  CLI:    ${chalk.cyan('@mxn2020/minions-bundles-finance-cli')}`);
         console.log(`  Python: ${chalk.cyan('minions-bundles-finance')}`);
         console.log(`  Store:  ${chalk.cyan(STORE_DIR)}`);

@@ -11,12 +11,12 @@
         "apps/*"
     ],
     "scripts": {
-        "build": "pnpm --filter @mxn2020/minions-bundles-finance-core run build && pnpm --filter @mxn2020/minions-bundles-finance-cli run build && pnpm --filter @mxn2020/minions-bundles-finance-docs run build && pnpm --filter @mxn2020/minions-bundles-finance-blog run build && pnpm --filter @mxn2020/minions-bundles-finance-web run build",
-        "deploy:blog": "pnpm --filter @mxn2020/minions-bundles-finance-blog run build && netlify deploy --dir apps/blog/dist --prod",
-        "deploy:docs": "pnpm --filter @mxn2020/minions-bundles-finance-docs run build && netlify deploy --dir apps/docs/dist --prod",
-        "deploy:web": "pnpm --filter @mxn2020/minions-bundles-finance-web run build && netlify deploy --dir apps/web/dist --prod",
-        "test": "pnpm --filter @mxn2020/minions-bundles-finance-core run test",
-        "lint": "pnpm --filter @mxn2020/minions-bundles-finance-core run build && pnpm --filter @mxn2020/minions-bundles-finance-core run lint && pnpm --filter @mxn2020/minions-bundles-finance-cli run lint",
+        "build": "pnpm --filter @mxn2020/minions-bundles-finance-sdk run build && pnpm --filter @mxn2020/minions-bundles-finance-cli run build && pnpm --filter minions-bundles-finance-docs run build && pnpm --filter minions-bundles-finance-blog run build && pnpm --filter minions-bundles-finance-web run build",
+        "deploy:blog": "pnpm --filter minions-bundles-finance-blog run build && netlify deploy --dir apps/blog/dist --prod",
+        "deploy:docs": "pnpm --filter minions-bundles-finance-docs run build && netlify deploy --dir apps/docs/dist --prod",
+        "deploy:web": "pnpm --filter minions-bundles-finance-web run build && netlify deploy --dir apps/web/dist --prod",
+        "test": "pnpm --filter @mxn2020/minions-bundles-finance-sdk run test",
+        "lint": "pnpm --filter @mxn2020/minions-bundles-finance-sdk run build && pnpm --filter @mxn2020/minions-bundles-finance-sdk run lint && pnpm --filter @mxn2020/minions-bundles-finance-cli run lint",
         "deploy": "pnpm run deploy:blog"
     },
     "engines": {

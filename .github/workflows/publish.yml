@@ -40,8 +40,8 @@ jobs:
       - name: Test
         run: pnpm run test
 
-      - name: Publish @mxn2020/minions-bundles-finance-core
-        run: pnpm --filter @mxn2020/minions-bundles-finance-core publish --no-git-checks --access public
+      - name: Publish @mxn2020/minions-bundles-finance-sdk
+        run: pnpm --filter @mxn2020/minions-bundles-finance-sdk publish --no-git-checks --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 

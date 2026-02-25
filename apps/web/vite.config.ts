@@ -11,7 +11,7 @@ export default defineConfig({
     },
     base: '/',
     optimizeDeps: {
-        include: ['@mxn2020/minions-bundles-finance-core'],
+        include: ['@mxn2020/minions-bundles-finance-sdk'],
     },
     build: {
         commonjsOptions: {

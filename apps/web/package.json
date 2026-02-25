@@ -1,5 +1,5 @@
 {
-    "name": "@mxn2020/minions-bundles-finance-web",
+    "name": "minions-bundles-finance-web",
     "version": "0.1.0",
     "private": true,
     "type": "module",
@@ -14,7 +14,7 @@
     "dependencies": {
         "framer-motion": "^12.34.2",
         "lucide-react": "^0.575.0",
-        "@mxn2020/minions-bundles-finance-core": "workspace:*",
+        "@mxn2020/minions-bundles-finance-sdk": "workspace:*",
         "react": "^19.2.4",
         "react-dom": "^19.2.4",
         "react-router-dom": "^7.13.0"

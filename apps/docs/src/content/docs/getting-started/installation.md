@@ -6,7 +6,7 @@ description: "Install Minions Bundle: Finance packages"
 ## TypeScript / Node.js
 
 ```bash
-npm install @mxn2020/minions-bundles-finance-core minions-sdk
+npm install @mxn2020/minions-bundles-finance-sdk minions-sdk
 ```
 
 ## Python

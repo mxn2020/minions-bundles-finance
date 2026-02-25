@@ -8,7 +8,10 @@
     "url": "https://github.com/mxn2020/minions-bundles-finance"
   },
   "homepage": "https://docs.minions.wtf",
-  "keywords": ["finance","bundle","ai","minions"],
+  "keywords": {
+    {keywordsJson
+    }
+  },
   "author": "Mehdi Nabhani <mehdi@the-mehdi.com> (https://the-mehdi.com)",
   "type": "module",
   "bin": {
@@ -25,8 +28,8 @@
     "dev": "node --loader ts-node/esm src/index.ts"
   },
   "dependencies": {
-    "@mxn2020/minions-bundles-finance-core": "workspace:*",
-    "chalk": "^5.6.2",
+    "@mxn2020/minions-bundles-finance-sdk": "workspace:*",
+    "chalk": "^5.3.0",
     "commander": "^14.0.3",
     "inquirer": "^13.2.5",
     "minions-sdk": "^0.2.2"
