@@ -6,3 +6,4 @@ description: Standard compliance definition for minions-bundles-finance-docs
 priority: high
 deploy_url: null
 tags: null
+category: minion-toolbox

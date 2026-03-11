@@ -6,3 +6,4 @@ description: "CLI for minions-bundles-finance — Financial tracking bundle — 
 priority: high
 deploy_url: null
 tags: null
+category: minion-toolbox
