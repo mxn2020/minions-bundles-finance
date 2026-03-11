@@ -1,5 +1,7 @@
 name: minions-bundles-finance-workspace
-description: Financial tracking bundle — budgets, expenses, invoices
+project_scope: main
+project_type: monorepo
+description: "Financial tracking bundle — budgets, expenses, invoices"
 tier: idea
 lane: minions
 priority: medium
@@ -8,5 +10,6 @@ stack: [typescript]
 repo: "https://github.com/mxn2020/minions-bundles-finance"
 deploy_url: null
 last_active: 2026-02-25
-tags: []
-notes: 
+tags: [minion, bundle, ai-agent, automation, finance, toolbox, ecosystem]
+notes: null
+id: bbbc016b-723a-4c36-aff5-f817a1b5b5f9

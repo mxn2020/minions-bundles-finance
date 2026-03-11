@@ -1,3 +1,5 @@
+![CI](https://github.com/mxn2020/@minions-bundles-finance/sdk/actions/workflows/ci.yml/badge.svg) ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 # @minions-bundles-finance/sdk
 
 Financial tracking bundle — budgets, expenses, invoices

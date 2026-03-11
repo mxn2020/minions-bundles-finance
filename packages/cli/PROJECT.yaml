@@ -1,0 +1,8 @@
+name: "@minions-bundles-finance/cli"
+project_scope: child
+child_type: cli
+parent_project: minions-bundles-finance-workspace
+description: "CLI for minions-bundles-finance — Financial tracking bundle — budgets, expenses, invoices"
+priority: high
+deploy_url: null
+tags: null
