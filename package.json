@@ -2,7 +2,7 @@
   "name": "minions-bundles-finance-workspace",
   "private": true,
   "version": "0.1.1",
-  "description": "Financial tracking bundle \u2014 budgets, expenses, invoices",
+  "description": "Financial tracking bundle — budgets, expenses, invoices",
   "type": "module",
   "license": "MIT",
   "author": "Mehdi Nabhani <mehdi@the-mehdi.com> (https://the-mehdi.com)",
